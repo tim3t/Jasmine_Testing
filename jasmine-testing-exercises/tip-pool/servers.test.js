@@ -22,11 +22,11 @@ describe("Servers test (with setup and tear-down)", function() {
     submitServerInfo();
     updateServerTable();
 
-    let currentServerTable = document.querySelectorAll('#serverTable tbody tr td');
+    let curTdList = document.querySelectorAll('#serverTable tbody tr td');
 
-    expect(currentServerTable.length).toEqual(2);
-    expect(currentServerTable[0].innerText).toEqual('Alice');
-    expect(currentServerTable[1].innerText).toEqual('$0.00');
+    expect(curTdList.length).toEqual(2);
+    expect(curTdList[0].innerText).toEqual('Alice');
+    expect(curTdList[1].innerText).toEqual('$0.00');
   });
 
   afterEach(function() {
